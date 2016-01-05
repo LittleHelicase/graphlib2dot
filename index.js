@@ -1,3 +1,4 @@
+#!/usr/bin/env node --version
 /* global __dirname, process */
 
 import program from 'commander'
