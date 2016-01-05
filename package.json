@@ -1,8 +1,10 @@
 {
   "name": "graphlib2dot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple command line tool that converts graphlib graphs to dot files via graphlib-dot",
-  "bin": {"graphlib2dot": "lib/index.js"},
+  "bin": {
+    "graphlib2dot": "lib/index.js"
+  },
   "scripts": {
     "test": "node node_modules/standard/bin/cmd.js"
   },
