@@ -9,13 +9,18 @@ import gdot from 'graphlib-dot'
 
 program
   .version(JSON.parse(fs.readFileSync(__dirname + '/../package.json'))['version'])
+  .option('-p, --prettyprint', 'Enable pretty printing of graphlib json document')
   .option('-f, --graphfile <graphfile>', 'Set graph file to parse. If none is given stdin is read')
   .parse(process.argv)
 
 var processGraph = str => {
   var graph = gdot.read(str)
   var json = graphlib.json.write(graph)
-  return json
+  if (program.prettyprint) {
+    return JSON.stringify(json, null, 2)
+  } else {
+    return JSON.stringify(json)
+  }
 }
 
 if (program.graphfile) {
