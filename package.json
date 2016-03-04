@@ -26,7 +26,7 @@
     "commander": "^2.9.0",
     "get-stdin": "^5.0.1",
     "graphlib": "^2.0.0",
-    "graphlib-dot": "^0.6.2"
+    "graphlib-dot": "git@github.com:LittleHelicase/graphlib-dot.git#557d952227f3dceb3894cf3aab67d48dd521d312"
   },
   "devDependencies": {
     "babel": "^5.8.29",
